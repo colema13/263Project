@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b080c;
+    color: red;
+    font-family: 'QuestrialRegular', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+#header {
+    background: #ED1B24;
+    width: 100%;
+}
+
+#header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+    width: 100%;
+    height: 300px;
+
+    background: url("../images/Big_Brother_Is_Watching_You.jpg")
+    no-repeat center center;
+
+    background-size: contain;
+}
+
+/* NAVIGATION */
+
+#header ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 20px 0;
+    margin: 0;
+}
+
+#header ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#header ul li a:hover {
+    color: white;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#background {
+    background:
+        black url("../images/TerrifiedEye.png")
+        no-repeat right center;
+
+    background-size: 300px;
+
+    min-height: 400px;
+    padding: 60px 0;
+}
+
+.hero-content {
+    width: 60%;
+}
+
+.hero-content h1 {
+    color: red;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin: 0;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+/* =========================
+   BLOG POSTS
+========================= */
+
+.post {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+    padding: 40px 0;
+    border-bottom: 1px solid #333;
+}
+
+.post-image {
+    flex: 1;
+}
+
+.post-content {
+    flex: 2;
+}
+
+.post-content p {
+    line-height: 1.8;
+}
+
+.readmore {
+    color: red;
+    text-decoration: none;
+}
+
+.readmore:hover {
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+    padding: 40px 0;
+    background: #111;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footer p {
+    color: red;
+    margin: 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #background {
+        background-position: center top;
+        background-size: 200px;
+        padding-top: 220px;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    #footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
