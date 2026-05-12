@@ -22,6 +22,14 @@ body {
     margin: 0 auto;
 }
 
+.nav-cam {
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			vertical-align: middle;
+			margin-left: 6px;
+		}
+
 /* =========================
    IMAGES
 ========================= */
@@ -79,7 +87,10 @@ img {
     padding: 20px 0;
     margin: 0;
 }
-
+#header ul li {
+  display: flex;
+  align-items: center;
+}
 #header ul li a {
     color: black;
     text-decoration: none;
