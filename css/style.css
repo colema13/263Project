@@ -59,6 +59,12 @@ img {
     background-size: contain;
 }
 
+.footer-logo img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
 /* NAVIGATION */
 
 #header ul {
@@ -159,6 +165,15 @@ img {
     background: #111;
 }
 
+#footer div.logo {
+    width: auto;
+}
+
+#footer div.logo a img {
+    width: clamp(40px, 4vw, 60px);
+    height: auto;
+}
+
 #footer .container {
     display: flex;
     justify-content: space-between;
@@ -171,6 +186,8 @@ img {
     color: red;
     margin: 0;
 }
+
+
 
 /* =========================
    MOBILE
@@ -203,4 +220,18 @@ img {
         align-items: center;
     }
 
+}
+
+/* KEYBOARD FOCUS */
+
+a:focus {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+/* BETTER HOVER + FOCUS */
+
+a:hover,
+a:focus {
+    text-decoration: underline;
 }
