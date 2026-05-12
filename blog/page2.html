@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PugSureWoi – Consent &amp; Surveillance</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		.nav-cam {
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			vertical-align: middle;
+			margin-left: 6px;
+		}
+		#header ul li {
+			display: flex;
+			align-items: center;
+		}
+		.page-intro {
+			padding: 50px 0 30px;
+			border-bottom: 2px solid #ED1B24;
+		}
+		.page-intro h2 {
+			color: #ED1B24;
+			font-size: clamp(1.6rem, 3vw, 2.4rem);
+			margin-bottom: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.page-intro p {
+			line-height: 1.9;
+			color: #ccc;
+			max-width: 820px;
+		}
+		.page-intro p strong {
+			color: red;
+		}
+		.section-label {
+			display: inline-block;
+			background: #ED1B24;
+			color: black;
+			font-size: 11px;
+			font-weight: bold;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			padding: 4px 10px;
+			margin-bottom: 12px;
+		}
+		.post-content h3 {
+			color: #ED1B24;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0 0 12px;
+		}
+		.post-image img {
+			border: 2px solid #333;
+			width: 100%;
+		}
+		.article-link {
+			display: inline-block;
+			margin-top: 10px;
+			color: #ED1B24;
+			text-decoration: none;
+			font-size: 14px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 1px solid #ED1B24;
+			padding: 6px 14px;
+			transition: 0.3s;
+		}
+		.article-link:hover {
+			background: #ED1B24;
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb {
+			padding: 16px 0;
+			font-size: 13px;
+			color: #666;
+		}
+		.breadcrumb a {
+			color: red;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			color: white;
+		}
+		#footer ul {
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			padding: 0;
+			margin: 0;
+			flex-wrap: wrap;
+		}
+		#footer ul li a {
+			color: red;
+			text-decoration: none;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+		#footer ul li a:hover {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div id="header">
+		<div class="container">
+			<a href="../index.html" class="logo"></a>
+			<ul>
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li>
+					<a href="../about.html">About</a>
+				</li>
+				<li class="current">
+					<a href="blog.html">Blog</a>
+					<img src="../images/CCTV-Camera-PNG.png" alt="CCTV" class="nav-cam">
+				</li>
+				<li>
+					<a href="../resources.html">Resources</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- HERO -->
+	<div id="background">
+		<div class="container">
+			<div class="hero-content">
+				<h1>You Never Agreed to This.</h1>
+				<p>
+					Consent has become a legal fiction in the age of mass surveillance. Your face, your movements, your patterns — collected, stored, and shared without your knowledge. The question is whether we can reclaim any meaningful control.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTENT -->
+	<div id="section">
+		<div class="container">
+
+			<div class="breadcrumb">
+				<a href="blog.html">&laquo; Back to Blog</a>
+			</div>
+
+			<!-- INTRO -->
+			<div class="page-intro">
+				<h2>The End of Meaningful Consent</h2>
+				<p>
+					In theory, consent is the cornerstone of privacy law. In practice, it has been systematically hollowed out by the surveillance industry. When a neighbor installs a Ring doorbell that captures the public sidewalk, you did not consent to being filmed. When Clearview AI scraped billions of photos from social media to build a facial recognition database sold to police, you did not consent to being in it. When a retailer uses facial recognition to track your shopping behavior, the fine-print terms buried in their app — that you agreed to by entering the store — are not meaningful consent. Below, we examine three specific breakdowns in how consent is handled in modern surveillance.
+				</p>
+			</div>
+
+			<!-- SECTION 1: Clearview AI -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Case 01</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/clearview_placeholder.jpg" alt="Clearview AI database">
+				</div>
+				<div class="post-content">
+					<h3>Clearview AI: The Database You Didn't Join</h3>
+					<p>
+						Clearview AI scraped more than 30 billion photographs from Facebook, Instagram, LinkedIn, Venmo, and millions of other websites to build the world's largest facial recognition database — without asking anyone. The company then sold access to this database to law enforcement agencies across the United States and abroad. Individuals whose faces appear in that database — which is essentially anyone who has ever been photographed online — had no opportunity to consent, no ability to opt out, and in many cases no way to even know they were included. Multiple countries have ruled Clearview's practices illegal, but the database exists and is actively used in the US. This is what the collapse of consent looks like at scale.
+					</p>
+					<a href="https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html" target="_blank" rel="noopener" class="article-link">Read the NYT Investigation &raquo;</a>
+				</div>
+			</div>
+
+			<!-- SECTION 2: Legal Gaps -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Case 02</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/legal_gaps_placeholder.jpg" alt="Legal gaps in surveillance law">
+				</div>
+				<div class="post-content">
+					<h3>The Law Cannot Keep Up</h3>
+					<p>
+						The United States has no comprehensive federal law governing facial recognition. A patchwork of state laws — Illinois' Biometric Information Privacy Act being the strongest — provides protection in some places but leaves vast gaps elsewhere. The EU's GDPR offers stronger biometric protections, but enforcement has been slow and exceptions broad. Meanwhile, the technology has proliferated into airports, schools, workplaces, and public events. By the time a new law is passed, the industry has already normalized a new level of data collection. Legal scholars have argued that the traditional notice-and-consent model is structurally incompatible with always-on surveillance environments, and that we need new frameworks built around data minimization and purpose limitation rather than individual opt-in.
+					</p>
+					<a href="https://epic.org/issues/surveillance-oversight/face-surveillance/" target="_blank" rel="noopener" class="article-link">Read EPIC's Analysis &raquo;</a>
+				</div>
+			</div>
+
+			<!-- SECTION 3: Private Networks -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Case 03</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/private_networks_placeholder.jpg" alt="Private surveillance networks">
+				</div>
+				<div class="post-content">
+					<h3>Private Networks, Public Spaces</h3>
+					<p>
+						Amazon's Ring has partnered with thousands of local police departments through its Neighbors app, creating a de facto private surveillance network covering residential neighborhoods across the country. Ring footage has been shared with law enforcement — in some cases without a warrant or the homeowner's knowledge — through a now-discontinued portal that police could access directly. Smart doorbells, business security cameras, and HOA surveillance systems are increasingly networked and searchable. The person being filmed in the frame of a neighbor's camera has no right to know, no right to remove themselves, and no recourse if that footage is used in an investigation. Consent, in this infrastructure, simply does not exist.
+					</p>
+					<a href="https://www.eff.org/deeplinks/2019/08/five-concerns-about-amazon-rings-deals-police" target="_blank" rel="noopener" class="article-link">Read the EFF Report &raquo;</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer">
+		<div class="container">
+			<div class="footer-logo">
+				<a href="../index.html">
+					<img src="../images/CCTV-Camera-PNG.png" alt="Logo">
+				</a>
+			</div>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+			</ul>
+			<p>&copy; 2023. PugSureWoi. All rights reserved.</p>
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google+</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

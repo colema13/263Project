@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PugSureWoi – Blog</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		.nav-cam {
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			vertical-align: middle;
+			margin-left: 6px;
+		}
+		#header ul li {
+			display: flex;
+			align-items: center;
+		}
+		.blog-intro {
+			padding: 50px 0 30px;
+			border-bottom: 2px solid #ED1B24;
+		}
+		.blog-intro h2 {
+			color: #ED1B24;
+			font-size: clamp(1.6rem, 3vw, 2.4rem);
+			margin-bottom: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.blog-intro p {
+			line-height: 1.9;
+			color: #ccc;
+			max-width: 820px;
+		}
+		.blog-intro p strong {
+			color: red;
+		}
+		.section-label {
+			display: inline-block;
+			background: #ED1B24;
+			color: black;
+			font-size: 11px;
+			font-weight: bold;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			padding: 4px 10px;
+			margin-bottom: 12px;
+		}
+		.post-content h3 {
+			color: #ED1B24;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0 0 12px;
+		}
+		.post-image img {
+			border: 2px solid #333;
+			width: 100%;
+		}
+		#footer ul {
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			padding: 0;
+			margin: 0;
+			flex-wrap: wrap;
+		}
+		#footer ul li a {
+			color: red;
+			text-decoration: none;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+		#footer ul li a:hover {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div id="header">
+		<div class="container">
+			<a href="../index.html" class="logo"></a>
+			<ul>
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li>
+					<a href="../about.html">About</a>
+				</li>
+				<li class="current">
+					<a href="blog.html">Blog</a>
+					<img src="../images/CCTV-Camera-PNG.png" alt="CCTV" class="nav-cam">
+				</li>
+				<li>
+					<a href="../resources.html">Resources</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- HERO -->
+	<div id="background">
+		<div class="container">
+			<div class="hero-content">
+				<h1>More Than Just Being Watched.</h1>
+				<p>
+					Surveillance technology has evolved far beyond a camera on a corner. The data it collects feeds powerful algorithms — and those algorithms are making decisions that affect real lives. This blog narrows that vast problem down to two root causes that demand your attention.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- BLOG INTRO -->
+	<div id="section">
+		<div class="container">
+
+			<div class="blog-intro">
+				<h2>How Data Is Actually Being Used</h2>
+				<p>
+					When a surveillance camera captures your face, that image does not simply disappear. It is processed, stored, cross-referenced, and in many cases sold or shared with third parties — including law enforcement — without your knowledge or agreement. Companies like Flock Safety and Clearview AI have built vast databases of faces and license plates, aggregating footage from private doorbells, parking lots, and public streets into profiles that track where you go, who you're with, and when.
+				</p>
+				<p>
+					The infrastructure of modern surveillance is not just about watching — it is about <strong>predicting and acting</strong>. AI systems analyze behavioral patterns, flag anomalies, and in some jurisdictions, automatically generate police alerts. The technology has moved faster than any legal framework designed to contain it. After reviewing the scope of this issue, we identified two core failures driving the most harm: <strong>Racial Bias</strong> in the algorithms themselves, and the collapse of meaningful <strong>Consent</strong> in how this data is collected and used.
+				</p>
+			</div>
+
+			<!-- POST: Racial Bias -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Issue 01</span>
+					<!-- Placeholder: replace src with your chosen image -->
+					<img src="../images/racial_bias_placeholder.jpg" alt="Facial recognition racial bias">
+				</div>
+				<div class="post-content">
+					<h3>Racial Bias in Facial Recognition</h3>
+					<p>
+						Independent audits — including the landmark NIST study — have found that facial recognition algorithms misidentify Black and Asian faces at rates dramatically higher than white faces. In law enforcement settings, a false positive is not just an inconvenience. People have been wrongfully arrested, detained, and investigated based solely on a flawed algorithmic match. The systems being sold as objective are encoding the biases of their training data into consequential decisions.
+					</p>
+					<a href="page1.html" class="readmore">Read more &raquo;</a>
+				</div>
+			</div>
+
+			<!-- POST: Consent -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Issue 02</span>
+					<!-- Placeholder: replace src with your chosen image -->
+					<img src="../images/consent_placeholder.jpg" alt="Surveillance and consent">
+				</div>
+				<div class="post-content">
+					<h3>The Collapse of Consent</h3>
+					<p>
+						The vast majority of people captured by facial recognition cameras, license plate readers, and smart doorbells never agreed to be enrolled in a database. Legal frameworks like GDPR in Europe and a patchwork of state laws in the US have attempted to address this — but enforcement is weak, definitions are narrow, and most individuals have no practical way to know they are being identified or to opt out. Consent, as a meaningful concept, has quietly collapsed in the surveillance age.
+					</p>
+					<a href="page2.html" class="readmore">Read more &raquo;</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer">
+		<div class="container">
+			<div class="footer-logo">
+				<a href="../index.html">
+					<img src="../images/CCTV-Camera-PNG.png" alt="Logo">
+				</a>
+			</div>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+			</ul>
+			<p>&copy; 2023. PugSureWoi. All rights reserved.</p>
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google+</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

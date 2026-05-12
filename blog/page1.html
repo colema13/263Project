@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PugSureWoi – Racial Bias in Facial Recognition</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		.nav-cam {
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			vertical-align: middle;
+			margin-left: 6px;
+		}
+		#header ul li {
+			display: flex;
+			align-items: center;
+		}
+		.page-intro {
+			padding: 50px 0 30px;
+			border-bottom: 2px solid #ED1B24;
+		}
+		.page-intro h2 {
+			color: #ED1B24;
+			font-size: clamp(1.6rem, 3vw, 2.4rem);
+			margin-bottom: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.page-intro p {
+			line-height: 1.9;
+			color: #ccc;
+			max-width: 820px;
+		}
+		.page-intro p strong {
+			color: red;
+		}
+		.section-label {
+			display: inline-block;
+			background: #ED1B24;
+			color: black;
+			font-size: 11px;
+			font-weight: bold;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			padding: 4px 10px;
+			margin-bottom: 12px;
+		}
+		.post-content h3 {
+			color: #ED1B24;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0 0 12px;
+		}
+		.post-image img {
+			border: 2px solid #333;
+			width: 100%;
+		}
+		.article-link {
+			display: inline-block;
+			margin-top: 10px;
+			color: #ED1B24;
+			text-decoration: none;
+			font-size: 14px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 1px solid #ED1B24;
+			padding: 6px 14px;
+			transition: 0.3s;
+		}
+		.article-link:hover {
+			background: #ED1B24;
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb {
+			padding: 16px 0;
+			font-size: 13px;
+			color: #666;
+		}
+		.breadcrumb a {
+			color: red;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			color: white;
+		}
+		#footer ul {
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			padding: 0;
+			margin: 0;
+			flex-wrap: wrap;
+		}
+		#footer ul li a {
+			color: red;
+			text-decoration: none;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+		#footer ul li a:hover {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div id="header">
+		<div class="container">
+			<a href="../index.html" class="logo"></a>
+			<ul>
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li>
+					<a href="../about.html">About</a>
+				</li>
+				<li class="current">
+					<a href="blog.html">Blog</a>
+					<img src="../images/CCTV-Camera-PNG.png" alt="CCTV" class="nav-cam">
+				</li>
+				<li>
+					<a href="../resources.html">Resources</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- HERO -->
+	<div id="background">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Racial Bias in the Algorithm.</h1>
+				<p>
+					Facial recognition is not neutral. It reflects the data it was trained on — and that data carries decades of structural inequity. The consequences fall hardest on communities already over-policed and under-protected.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTENT -->
+	<div id="section">
+		<div class="container">
+
+			<div class="breadcrumb">
+				<a href="blog.html">&laquo; Back to Blog</a>
+			</div>
+
+			<!-- INTRO -->
+			<div class="page-intro">
+				<h2>The Problem of Algorithmic Bias</h2>
+				<p>
+					Facial recognition technology is increasingly used in policing, hiring, banking, and border control — yet its accuracy varies dramatically depending on who is being identified. Research from MIT Media Lab and the National Institute of Standards and Technology (NIST) has demonstrated that many leading algorithms perform significantly worse on darker-skinned faces, particularly Black women. This is not an edge case. It is a systemic pattern that has already resulted in <strong>wrongful arrests</strong>, discriminatory denials, and the erosion of trust in institutions that deploy these tools. Below, we examine three specific dimensions of this crisis.
+				</p>
+			</div>
+
+			<!-- SECTION 1: NIST Findings -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Finding 01</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/nist_placeholder.jpg" alt="NIST facial recognition study">
+				</div>
+				<div class="post-content">
+					<h3>The NIST Study: Numbers Don't Lie</h3>
+					<p>
+						In 2019, the National Institute of Standards and Technology tested 189 facial recognition algorithms from 99 developers. The findings were stark: most algorithms showed higher false positive rates for African American and Asian faces compared to Caucasian faces — in some cases by a factor of 10 to 100. False positives in an identification system mean innocent people get flagged as matches to criminal suspects. The NIST study was one of the most comprehensive government evaluations of the technology and it confirmed what researchers had been warning for years: bias is baked into the baseline performance of these systems.
+					</p>
+					<a href="https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software" target="_blank" rel="noopener" class="article-link">Read the NIST Report &raquo;</a>
+				</div>
+			</div>
+
+			<!-- SECTION 2: Wrongful Arrests -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Finding 02</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/wrongful_arrest_placeholder.jpg" alt="Wrongful arrest facial recognition">
+				</div>
+				<div class="post-content">
+					<h3>Wrongful Arrests: Real People, Real Harm</h3>
+					<p>
+						Robert Williams, a Black man in Detroit, was arrested in 2020 after a facial recognition algorithm incorrectly matched his driver's license photo to a shoplifting suspect. He was held in jail for 30 hours. His case was not isolated — similar wrongful arrests have occurred in New Orleans and New Jersey, all involving Black men. In each case, law enforcement acted on a machine-generated match without sufficient human verification. The American Civil Liberties Union has documented multiple such cases and has called for a moratorium on law enforcement use of the technology. These are not software bugs — they are predictable outcomes of deploying a biased tool in high-stakes decisions.
+					</p>
+					<a href="https://www.aclu.org/news/privacy-technology/wrongfully-arrested-because-face-recognition-cant-tell-black-people-apart" target="_blank" rel="noopener" class="article-link">Read the ACLU Report &raquo;</a>
+				</div>
+			</div>
+
+			<!-- SECTION 3: Training Data Problem -->
+			<div class="post">
+				<div class="post-image">
+					<span class="section-label">Finding 03</span>
+					<!-- Replace src with your chosen image -->
+					<img src="../images/training_data_placeholder.jpg" alt="Biased training data">
+				</div>
+				<div class="post-content">
+					<h3>The Training Data Problem</h3>
+					<p>
+						Algorithmic bias does not appear from nowhere. It is a direct result of the datasets used to train these systems. Many early facial recognition datasets were overwhelmingly composed of lighter-skinned male faces — reflecting who was building the technology and whose images were easiest to collect. When a model is trained primarily on one demographic, its ability to accurately represent others degrades. Researchers at MIT found that commercially deployed gender classifiers from major tech companies had error rates of up to 34.7% for darker-skinned women compared to under 1% for lighter-skinned men. Until training datasets are representative and audited, bias will remain a structural feature — not a fixable bug.
+					</p>
+					<a href="https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212" target="_blank" rel="noopener" class="article-link">Read the MIT Study &raquo;</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer">
+		<div class="container">
+			<div class="footer-logo">
+				<a href="../index.html">
+					<img src="../images/CCTV-Camera-PNG.png" alt="Logo">
+				</a>
+			</div>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+			</ul>
+			<p>&copy; 2023. PugSureWoi. All rights reserved.</p>
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google+</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
