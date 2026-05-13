@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #0b080c;
+    background: black;
     color: red;
     font-family: 'QuestrialRegular', sans-serif;
     font-size: 16px;
@@ -173,7 +173,7 @@ img {
 
 #footer {
     padding: 40px 0;
-    background: #111;
+    background: black;
 }
 
 #footer div.logo {
