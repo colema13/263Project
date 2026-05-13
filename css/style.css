@@ -166,6 +166,7 @@ img {
 
 .post-image {
     flex: 1;
+    border: 2px solid #333;
 }
 
 .post-content {
@@ -204,8 +205,56 @@ img {
 			padding: 4px 10px;
 			margin-bottom: 12px;
 		}
+		
+.page-intro {
+			padding: 50px 0 30px;
+			border-bottom: 2px solid #ED1B24;
+		}
+.page-intro h2 {
+			color: #ED1B24;
+			font-size: clamp(1.6rem, 3vw, 2.4rem);
+			margin-bottom: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+.page-intro p {
+			line-height: 1.9;
+			color: #ccc;
+			max-width: 820px;
+		}
+.page-intro p strong {
+			color: red;
+		}
 	
-
+.article-link {
+			display: inline-block;
+			margin-top: 10px;
+			color: #ED1B24;
+			text-decoration: none;
+			font-size: 14px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 1px solid #ED1B24;
+			padding: 6px 14px;
+			transition: 0.3s;
+		}
+.article-link:hover {
+			background: #ED1B24;
+			color: black;
+			text-decoration: none;
+		}
+.breadcrumb {
+			padding: 16px 0;
+			font-size: 13px;
+			color: #666;
+		}
+.breadcrumb a {
+			color: red;
+			text-decoration: none;
+		}
+.breadcrumb a:hover {
+			color: white;
+		}
 /* =========================
    FOOTER
 ========================= */
